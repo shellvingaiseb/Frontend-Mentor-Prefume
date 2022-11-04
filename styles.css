@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  display: flex;
+  max-width: 600px;
+  height: 450px;
+  background-color:  hsl(0, 0%, 100%);
+  border-radius: 8px;
+  margin: 60px auto
+}
+
+.main-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-family: 'Montserrat';
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4f4f4f;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-right: auto;
+}
+
+.perfume-name {
+  font-family: 'Fraunces';
+  font-weight: 700;
+  font-size: 2rem;
+  display: block;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  margin-top: 9px;
+  margin-right: 30px;
+}
+
+.perfume-description {
+  font-family: 'Montserrat';
+  color: #4f4f4f;
+  line-height: 1.6rem;
+  font-weight: 400;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.prices {
+  display: flex;
+  margin-bottom: 0;
+}
+
+.price-tags {
+  font-family: 'Fraunces';
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-left: 30px;
+  margin-top: 30px;
+  vertical-align: bottom;
+}
+
+.reduced {
+  font-family: 'Montserrat';
+  color: #4f4f4f;
+  font-size: 0.7rem;
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.button {
+  background-color:hsl(158, 36%, 37%);
+  color:hsl(0, 0%, 100%);
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 270px;
+  margin: 20px auto;
+}
+
+@media(max-width: 375px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 100%;
+  }
+
+  .main-image {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    background-image: url(images/image-product-mobile.jpg);
+    background-repeat: no-repeat;
+  }
+}
+
+
+
